@@ -232,4 +232,4 @@ rosrun <pkg name> <node name>
 ```
 
 ## Credit:
-This guide is heavily based on the work of [ziad-ate](https://github.com/ziad-atef/ziad-atef).
+This guide is heavily based on the work of [Ziad Atef](https://github.com/ziad-atef/ziad-atef).
