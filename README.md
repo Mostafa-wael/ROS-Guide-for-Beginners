@@ -18,9 +18,10 @@ ROS is used by researchers, hobbyists, and companies around the world. ROS is us
 
 ```bash
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+sudo apt install curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install ros-kinetic-desktop-full
+sudo apt install ros-noetic-desktop-full
 ```
 
 ### Initialize rosdep
@@ -33,7 +34,7 @@ rosdep update
 ### Environment setup
 
 ```bash
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 

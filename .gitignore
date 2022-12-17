@@ -1,0 +1,15 @@
+#Required only for integration tools
+.catkin_workspace
+
+#Build results an devel directory
+build
+devel
+
+#Summit-xl Packages
+robotnik_msgs
+robotnik_sensors
+summit_xl_common
+summit_xl_sim
+
+#vscode
+.vscode
