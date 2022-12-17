@@ -243,14 +243,21 @@ rosrun <pkg name> <node name>
 ```
 
 ## Useful ROS Commands
-- To list all the topics:
+- Related to the topics:
 ```bash
-rostopic list
-rostopic {topic name} info
-rostopic echo {topic name}
-
+# list all the topics
+rostopic list 
+# get the topic details
+rostopic <topic name> info
+# print the topic data
+rostopic echo <topic name>
+```
+- Related to the messages:
+```bash
+# list all the messages
 rosmsg list
-rosmsg info {message type}
+# get the message details
+rosmsg info <message type>
 ```
 ## Credit:
 This guide is heavily based on the work of [Ziad Atef](https://github.com/ziad-atef/ziad-atef).
