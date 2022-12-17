@@ -14,7 +14,7 @@ ROS is a framework for writing robot software. It is a collection of tools, libr
 ## Who uses ROS?
 ROS is used by researchers, hobbyists, and companies around the world. ROS is used in academia, research labs, and commercial environments. ROS is used by small teams and large organizations. ROS is used by hobbyists and professionals. ROS is used on small robots and large robots. ROS is used in warehouses and on the moon. ROS is used for education and research. ROS is used for fun and profit.
 
-## Installation(kinetic)
+## Installation(Noetic)
 
 ```bash
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -43,6 +43,16 @@ source ~/.bashrc
 ```bash
 sudo apt-get install python-rosinstall
 ```
+## Create project
+1. Create working directory: `mkdir -p workspace/src`
+2. Get into working directory: `cd workspace`
+3. Create catkin workspace: `catkin_make`
+4. Source the workspace: `source devel/setup.bash`
+5. Get into the source directory: `cd src`
+6. Create a package: `catkin_create_pkg simple_pkg rospy`
+7. Get into the package directory: `cd simple_pkg`
+8. Create a script directory: `mkdir scripts`
+9. Create node file: `touch scripts/simple_node.py`
 ## Simple ROS Node Example
 - `simple_node.py`:
 ``` python
@@ -232,5 +242,15 @@ roscore
 rosrun <pkg name> <node name>
 ```
 
+## Useful ROS Commands
+- To list all the topics:
+```bash
+rostopic list
+rostopic {topic name} info
+rostopic echo {topic name}
+
+rosmsg list
+rosmsg info {message type}
+```
 ## Credit:
 This guide is heavily based on the work of [Ziad Atef](https://github.com/ziad-atef/ziad-atef).
