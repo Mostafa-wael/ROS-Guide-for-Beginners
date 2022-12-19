@@ -5,9 +5,6 @@ ROS is an open-source, meta-operating system for your robot. It provides the ser
 
 ROS is supported on Ubuntu, Debian, and Fedora.
 
-## What is the ROS Community?
-The ROS Community is a group of developers, researchers, and companies working together to advance the state of the art in robotics using ROS. The ROS Community is a non-profit organization that is open to anyone who is interested in ROS. The ROS Community is governed by a board of directors, and is funded by a membership program and donations.
-
 ## How does ROS work?
 ROS is a framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms. It is a distributed framework of processes that enables executables to be individually designed and loosely coupled. ROS provides conventions and tools so that your processes can discover and use each other's services without needing to know anything about the network. ROS also provides tools for configuring, launching, and monitoring the processes that make up your system.
 
