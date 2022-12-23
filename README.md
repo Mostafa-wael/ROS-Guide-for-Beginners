@@ -24,6 +24,8 @@ sudo apt install ros-noetic-desktop-full
 ### Initialize rosdep
 
 ```bash
+sudo apt-get install python-pip
+sudo pip install -U rosdep
 sudo rosdep init
 rosdep update
 ```
